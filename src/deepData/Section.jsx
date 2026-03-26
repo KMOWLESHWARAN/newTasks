@@ -3,7 +3,6 @@ import Content from './Content'
 function Section() {
   return (
     <div>
-        Section
         <Content/>
     </div>
   )

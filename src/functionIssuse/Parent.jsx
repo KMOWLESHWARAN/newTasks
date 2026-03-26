@@ -1,5 +1,6 @@
 import React, { useState,useCallback } from 'react'
 import Child from './Child';
+
 function Parent() {
     console.log("Parent component");
     const [counter,setCounter] = useState(0);

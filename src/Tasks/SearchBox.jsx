@@ -38,6 +38,7 @@ function SearchBox() {
         {filterUsers.map((user) =>(
                 <div key={user.id}>
                     <h4>{user.name}</h4>
+                    <h4>{user.username}</h4>
                 </div>
             ))}
     </div>

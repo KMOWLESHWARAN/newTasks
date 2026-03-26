@@ -4,7 +4,7 @@ import { themeContext } from '../App';
 
 function Display() {
 
-    const {theme,userName} = useContext(themeContext);
+    const {theme,userName,toggleTheme} = useContext(themeContext);
 
     const textStyle = {
         background : theme === "light"? "white":"black",
@@ -12,10 +12,14 @@ function Display() {
     }
 
   return (
-    <div style={textStyle}>
+    <div>
+      <div style={textStyle}>
         <h2>Theme</h2>
         <h3>{userName}</h3>
+      </div>
+      <button onClick={toggleTheme}>Toggle Theme</button>
     </div>
+    
   )
 }
 

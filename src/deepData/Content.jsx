@@ -4,7 +4,6 @@ import Display from './Display'
 function Content() {
   return (
     <div>
-        Content
         <Display/>
     </div>
   )
